@@ -15,7 +15,7 @@ while(cap.isOpened()):
         # write the flipped frame
         out.write(frame)
         cv2.imshow('frame',frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(1) & 0xFF == ord('q'):  #to exit the loop by pressing key "q"
             break
     else:
         break
