@@ -1,4 +1,4 @@
-#To Capture Video using webcam and save it in MP4 format using Open CV
+#To Capture Video using webcam and save it in MP4 format with python and Open CV
 import numpy as np
 import cv2
 
