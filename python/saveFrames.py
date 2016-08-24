@@ -9,7 +9,7 @@ while(cap.isOpened()):
     if ret==True:
         cv2.imwrite("frame%02d.jpg"%frame_counter,frame)
         frame_counter+=1
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(1) & 0xFF == ord('q'): #to exit the loop by pressing key "q"
             break
     else:
         break
