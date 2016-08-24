@@ -1,7 +1,7 @@
 #**What is OpenCV**
 
--Open Source Computer Vision
+Open Source Computer Vision
 
 ##Project's Content:
 
--How to code using OpenCV
+How to code with OpenCV
