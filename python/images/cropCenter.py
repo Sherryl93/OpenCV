@@ -1,5 +1,6 @@
 ## Function to crop the center of Images
 import numpy as np
+import cv2
 
 def centeredCrop(img):
 	height =  np.size(img,0)
@@ -15,3 +16,9 @@ def centeredCrop(img):
 	bottom = height - np.floor((height - new_height)/2.)
 	cImg = img[top:bottom, left:right]
 	return cImg
+	
+Image=cv2.imread("Image.jpg")
+cropCenter=centeredCrop(Image)
+cv2.imshow('ImageWindow',cropCenter)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
