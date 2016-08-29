@@ -5,8 +5,10 @@ import cv2
 cap = cv2.VideoCapture(0)
 width=cap.get(3)
 height=cap.get(4)
+width=int(width)
+height=int(height)
 
-out = cv2.VideoWriter('output.mp4',cv2.VideoWriter_fourcc(*'MP4V'), 30.0, (640,480))
+out = cv2.VideoWriter('output.mp4',cv2.VideoWriter_fourcc(*'MP4V'), 30.0, (width,height))
 
 while(cap.isOpened()):
     ret, frame = cap.read()
